@@ -18,4 +18,4 @@ function passwordGenerator(num) {
 passwordBtnEl.on('dblclick', function () {
   var newPassword = passwordGenerator(15);
   passwordDisplayEl.text(newPassword);
-});
+});//this logic is consulting as a SaaS
