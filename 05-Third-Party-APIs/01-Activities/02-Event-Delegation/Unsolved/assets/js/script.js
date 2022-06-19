@@ -1,15 +1,19 @@
 var shoppingFormEl = $('#shopping-form');
 var shoppingListEl = $('#shopping-list');
 
-function handleFormSubmit(event) {
-  event.preventDefault();
+// function handleFormSubmit(event) {
+//   event.preventDefault();
 
-  var shoppingItem = $('input[name="shopping-input"]').val();
+//   var shoppingItem = $('input[name="shopping-input"]').val();
 
-  if (!shoppingItem) {
-    console.log('No shopping item filled out in form!');
-    return;
-  }
+//   if (!shoppingItem) {
+//     console.log('No shopping item filled out in form!');
+//     return;
+//   }
+var CNS=e=>{
+    e.preventDefault();
+    var fashionPiece=$('input')
+
 
   var shoppingListItemEl = $(
     '<li class="flex-row justify-space-between align-center p-2 bg-light text-dark">'
