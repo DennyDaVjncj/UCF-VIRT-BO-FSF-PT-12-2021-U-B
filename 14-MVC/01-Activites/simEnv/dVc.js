@@ -17,4 +17,4 @@ app.use(require('./controllers/dis-routes'));
 app.listen(PORT,()=>{
     console.log('Live connection on: http://localhost:'+CHANNEL);
 });
-//establish live connections
+//establish live connection
