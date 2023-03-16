@@ -1,17 +1,34 @@
 var uiList=document.querySelector('ul');
 var parsingElement=document.getElementById('fetch-button');//we're targeting a bttn elemnt with an id of 'fetch-button'
 
-function getApi(){
-  var targetElemnts='https://api.github.com/user/DennyDaVjncj/repos';//defined my target elements on this line with 'this' variable
+// function getApi(){
+//   var targetElemnts='https://api.github.com/user/DennyDaVjncj/repos';//defined my target elements on this line with 'this' variable
 
-  fetch(targetElemnts)
-    .then(serverResponse=>{
-        return serverResponse.json();
+//   fetch(targetElemnts)
+//     .then(serverResponse=>{
+//         return serverResponse.json();
+//     })
+//     .then(payload=>{
+//       for(var i=0;i<payload.length;i++){
+//         var ulItem=document.createElement('li');
+//         ulItem.textContent=payload[i].html_url;
+//       }
+//     })
+// }
+
+var desiredDataPoint=document.querySelector('ul');
+var userRequest=document.getElementById('fetch-button');
+
+var axiosCall=()=>{
+  var endpointToHit='https://api.github.com/users/DennyDaVjncj/repos';
+
+  fetch(endpointToHit)
+    .then(fuction(reply){
+      return endpointToHit.json()
     })
-    .then(payload=>{
-      for(var i=0;i<payload.length;i++){
-        var ulItem=document.createElement('li');
-        ulItem.textContent=payload[i].html_url;
+    .then(function(desired){
+      for(var i=0;i<desired.length;i++){
+        
       }
     })
 }
